@@ -1,0 +1,91 @@
+@media (max-width:426px) {
+    .container_for_section_heading h5 {
+        font-size: 35px !important;
+    }
+
+    .secondary_heading h3 {
+        font-size: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .display {
+        width: 90% !important;
+    }
+
+    .Button_for_learnmore {
+        display: block !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 10px !important;
+    }
+
+    .Button_for_learnmore button {
+        padding: 0 20px;
+    }
+}
+
+.container_for_section_heading {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container_for_section_heading div,
+.Button_for_learnmore div,
+.secondary_heading div {
+    width: 90%;
+}
+
+.container_for_section_heading h5 {
+    font-size: 79px;
+    font-weight: normal;
+}
+
+.secondary_heading {
+    display: flex;
+    justify-content: center;
+}
+
+.Button_for_learnmore {
+
+    display: none;
+}
+
+.parent_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.display {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.display h4 {
+        margin-top: 10px;
+    }
+
+.horizontal_line {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal_line hr {
+    width: 90%;
+}

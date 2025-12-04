@@ -1,0 +1,105 @@
+.container{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_button_web Button{
+    padding: 0.2rem 1.3rem;
+}
+
+@media (max-width:426px){
+    .container{
+        display: none;
+    }
+    .nav_bar_head_for_mobile_responsive{
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .container_for_mobile_responsive{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+    .nav_items_for_mobile_responsive{
+        height: 100vh;
+        justify-content: center;
+    }
+    .bar_icon{
+        display: flex;
+        align-items: center;
+    }
+    .three_bar_icon,
+    .x_bar_icon{
+        margin-top: 0.3rem;
+    }
+    .login_button_mobile Button{
+        padding: 0.2rem 1.3rem;
+        transform: scale(0.7);
+    }
+}
+
+.nav_items_for_mobile_responsive{
+    animation: fadeInTop 1s ease forwards;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav_items_for_mobile_responsive ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display ul{
+    display: flex;
+    gap: 2rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+.display a,
+.logo a{
+    text-decoration: none;
+    color: rgb(7, 2, 105);
+}
+
+.three_bar_icon button,
+.x_bar_icon button{
+    color: rgb(7, 2, 105);
+    font-size: 1.2rem;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background-color: white;
+}
+
+.nav_bar_head_for_mobile_responsive{
+    height: 3rem;
+    background-color: white;
+    display: none;
+}

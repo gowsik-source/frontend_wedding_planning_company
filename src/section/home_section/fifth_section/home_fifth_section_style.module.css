@@ -1,0 +1,78 @@
+.heading h1{
+    font-size: 79px;
+    font-weight: normal;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:426px){
+    .container{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .display{
+        width: 90% !important;
+    }
+    .heading h1{
+        font-size: 35px;
+    }
+    .display input{
+        width: 100%;
+    }
+    .display textarea{
+        width: 100% !important;
+    }
+    .join_button button{
+        width: 100% !important;
+    }
+}
+
+.display{
+    width: 45%;
+}
+
+.join_button{
+    margin-top: 10px;
+}
+
+.join_button button{
+    width: 70%;
+}
+
+.label_div{
+    margin-top: 20px;
+}
+
+.container_for_error_message{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.container_for_error_message p,
+.error_icon{
+    color: red;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.error_icon{
+    margin-top: 0.1rem;
+}
+
+.message_input_div textarea{
+    resize: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 70%;
+    border-width: 0.1rem;
+}

@@ -1,0 +1,61 @@
+.container{
+    height: 150vh;
+    background-image: url('../../../assets/cover_image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7); /*background color with low opacity*/
+    background-blend-mode: overlay;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 90%;
+}
+
+.get_touch_button a{
+    margin-top: 20px;
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+.text{
+    width: 50%;
+}
+
+.heading h1, .text p{
+    color: white;
+}
+
+.get_touch_button a{
+    padding: 10px 30px 25px 30px;
+    background-color: white;
+    /* color: rgb(7, 2, 105); */
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+}
+.get_touch_button{
+    width: fit-content;
+}
+
+@media (max-width: 426px){
+    .heading{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .text{
+        width: 100%;
+    }
+     .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+}

@@ -1,0 +1,114 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 100px 0;
+}
+
+@media(max-width:426px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .display_left,
+    .display_right,
+    .subscribe_checkbox{
+        width: 90% !important;
+    }
+    .join_button button,
+    .email_input input{
+        width: 100% !important;
+    }
+    .mobile_responsive_for_text_and_icon{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.display_left,
+.display_right{
+    width: 45%;
+    margin-top: 70px;
+}
+
+.display_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+     color: rgb(7, 2, 105);
+}
+
+.down_left_corner_section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.email_input input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 70%;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.message p{
+    margin: 0;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.error_icon{
+    margin-top: 0.3rem;
+    color: red;
+}
+
+.input_error{
+    border-color: red;
+}
+
+.subscribe_checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox_label label{
+    cursor: pointer;
+}
+
+.checkbox_div input{
+    transform: scale(2);
+}
+
+.join_button button{
+    width: 70%;
+}
+
+.icon_container{
+    display: flex;
+    gap: 5px;
+}
+
+.icon_container a{
+     color: rgb(7, 2, 105);
+}
+
+.by_wix_website{
+    text-decoration: underline;
+}
+
+.email_input_label,
+.join_button_below_text,
+.icon_container,
+.powered_by_text{
+    margin-top: 20px;
+}

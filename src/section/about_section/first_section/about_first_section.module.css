@@ -1,0 +1,33 @@
+.heading h1{
+    color: rgb(7, 2, 105);
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media(max-width:426px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.display{
+    width: 90%;
+}
+
+.left_side_image_section{
+    margin-top: 40px;
+}
+
+.left_side_image_section img,
+.right_side_image_section img{
+    width: 100%;
+}
+
+p {
+    margin-top: 35px;
+}

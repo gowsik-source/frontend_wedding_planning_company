@@ -1,0 +1,22 @@
+.default_style{
+    background-color: rgb(7, 2, 105);
+    border-width: 1px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.default_style:hover{
+    background-color: white;
+    color: rgb(7, 2, 105);
+    cursor: pointer;
+}
+
+@media (max-width:426px){
+    .default_style{
+        font-weight: normal;
+    }
+}
