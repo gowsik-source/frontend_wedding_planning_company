@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import style from './home_fifth_section_style.module.css'
 import FormInput from '../../../components/FormInput'
 import Button from '../../../components/Button'
-import axios from 'axios'
+import axiosDetails from '../../../API/BaseURL'
 import { MdErrorOutline } from "react-icons/md"
 
 const HomeFifthSection = () => {
@@ -39,13 +39,13 @@ const HomeFifthSection = () => {
   const joinAction = async () => {
     if (formValidation()) {
       try {
-        const updateData = {
+        const payLoad = {
           firstName: firstName,
           secondName: secondName,
           email: email,
           message: message
         }
-        const response = await axios.post('https://jsonplaceholder.typicode.com/users', updateData)
+        const response = await axiosDetails.post('/contact/create', payLoad)
       } catch (error) {
         console.log('API error or network error')
       }

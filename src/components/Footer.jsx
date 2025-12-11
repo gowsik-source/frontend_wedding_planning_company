@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from './footer_style.module.css'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
+import axiosDetails from '../API/BaseURL'
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { MdErrorOutline } from "react-icons/md"
@@ -43,10 +43,10 @@ const Footer = () => {
   const joinAction = async () => {
     if (emailValidation() && checkBoxVerification()) {
       try {
-        const userEmail = {
+        const payLoad = {
           email: email
         }
-        const response = await axios.post('https://jsonplaceholder.typicode.com/users', userEmail)
+        const response = await axiosDetails.post('/footer/subscribe', payLoad)
       } catch (error) {
         console.log('API error or network error')
       }
