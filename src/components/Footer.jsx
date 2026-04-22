@@ -47,6 +47,7 @@ const Footer = () => {
           email: email
         }
         const response = await axiosDetails.post('/footer/subscribe', payLoad)
+        console.log(response.data)
       } catch (error) {
         console.log('API error or network error')
       }

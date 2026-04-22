@@ -46,6 +46,7 @@ const HomeFifthSection = () => {
           message: message
         }
         const response = await axiosDetails.post('/contact/create', payLoad)
+        console.log(response.data)
       } catch (error) {
         console.log('API error or network error')
       }
