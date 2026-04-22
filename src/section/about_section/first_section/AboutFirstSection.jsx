@@ -21,12 +21,12 @@ const AboutFirstSection = () => {
             <p>From selecting the perfect venue to curating exquisite décor, we are committed to making your wedding not just an event, but an unforgettable experience filled with warmth, joy, and effortless style.</p>
           </div>
           <div className={style.left_side_image_section}>
-            <img src={leftImage} alt="Long portrait image" />
+            <img src={leftImage} alt="Long portrait" />
           </div>
         </div>
         <div className={style.display}>
         <div className={style.right_side_image_section}>
-          <img src={rightImage} alt="Landscope image" />
+          <img src={rightImage} alt="Landscope" />
         </div>
         </div>
       </div>
