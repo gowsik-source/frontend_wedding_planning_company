@@ -123,8 +123,8 @@ const Register = () => {
                         <div className={style.input_field}>
                             <FormInput inputType={'password'} placehold={'Re-enter password'} inputId={'reEnterPassword'} getValue={reEnterPassword} getData={(e) => setReEnterPassword(e.target.value)} style={{ borderBottom: error.reEnterPassword ? '2px solid red' : '2px solid black' }} />
                         </div>
-                        <div className={style.container_for_error_message} style={{ display: error.reEnterPassword ? 'block' : 'none' }}>
-                            <div className={style.error_icon}>
+                        <div className={style.container_for_error_message}>
+                            <div className={style.error_icon} style={{ display: error.reEnterPassword ? 'block' : 'none' }}>
                                 <MdErrorOutline />
                             </div>
                             <div className={style.error_message}>

@@ -73,3 +73,9 @@
     color: gray;
     text-align: center;
 }
+
+@media(max-width:426px) {
+    .display{
+        width: 100%;
+    }
+}
