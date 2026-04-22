@@ -24,6 +24,7 @@ const ForgetPassword = () => {
     if (fieldValidation()) {
       try {
         let response = await axiosDetails.put('user/forgotPassword/:id', { email })
+        console.log("Reset password email sent successfully: ", response.data);
       } catch (error) {
         console.log("Error in sending reset password email: ", error);
       }
