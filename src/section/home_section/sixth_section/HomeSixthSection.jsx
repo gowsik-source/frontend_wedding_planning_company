@@ -7,7 +7,7 @@ const HomeSixthSection = () => {
     <div>
         <div className={style.container}>
       <div>
-        <img src={image} alt="image" />
+        <img src={image} alt="baner" />
       </div>
       </div>
     </div>
