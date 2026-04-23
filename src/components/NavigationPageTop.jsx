@@ -1,10 +1,9 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 
+const includedRoutes = ["/about", "/contact", "/services"];
 const NavigationPageTop = () => {
     const { pathname } = useLocation();
-
-    const includedRoutes = ["/about", "/contact", "/services"];
 
     useEffect(() => {
     if (includedRoutes.includes(pathname)) {
